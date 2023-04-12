@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/signupActivity">
+
+    <activity
+        android:id="@+id/signupActivity"
+        android:name="com.example.weather.signupActivity"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.weather.LoginActivity"
+        android:label="LoginActivity" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.weather.MainActivity"
+        android:label="@string/to_home"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/firstLoginActivity"
+        android:name="com.example.weather.FirstLoginActivity"
+        tools:layout="@layout/activity_first_login" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.weather.SettingsFragment"
+        android:label="@string/settings"
+        />
+</navigation>
